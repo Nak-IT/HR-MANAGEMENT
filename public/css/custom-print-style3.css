@@ -1,0 +1,41 @@
+/* custom-print-style.css */
+
+/* Set page orientation to landscape when printing */
+@media print {
+    @page {
+        size: A4 landscape;
+        margin: 2mm;
+    }
+}
+
+/* Style for table headers */
+th {
+    font-family: 'Khmer M1', sans-serif;
+    font-size: 10px;
+    color: blue;
+    text-align: left;
+    padding: 8px;
+    border: 1.5pt solid black;
+}
+
+/* Style for table data cells */
+td {
+    font-family: 'Khmer OS Battambang', sans-serif;
+    font-size: 10px;
+    color: black;
+    padding: 8px;
+    border: 0.5pt solid black;
+}
+
+/* Style adjustments for table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 0.5pt solid black;
+    table-layout: auto; /* Ensure columns auto-size based on content */
+}
+
+table, th, td {
+    /* Ensure all borders are solid, 1.5pt, and black */
+    border: 0.5pt solid black;
+}

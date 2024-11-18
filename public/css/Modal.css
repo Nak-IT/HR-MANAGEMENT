@@ -1,0 +1,296 @@
+﻿/* General Body Styles */
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Modal backdrop smooth fade */
+.modal-backdrop {
+    background-color: #302829b3; /* Light pink backdrop */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+    /* Modal backdrop showing */
+    .modal-backdrop.show {
+        opacity: 1;
+    }
+
+/* Modal fade-in effect */
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    transform: translateY(-25%);
+    opacity: 0;
+}
+
+/* Modal fade-in effect when shown */
+.modal.fade.show .modal-dialog {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Modal content */
+.modal-content {
+    border-radius: 30px;
+    background-color: #fffaf0; /* Floral white background */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    color: hwb(0 20% 80%);
+    padding: 20px;
+}
+
+/* Modal header */
+.modal-header {
+    background-color: #ff69b4; /* Hot pink background */
+    border-bottom: none;
+    border-radius: 30px 30px 0 0; /* Rounded top corners */
+    color: white;
+    padding: 15px 20px;
+}
+
+/* Modal title */
+.modal-title {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Playful font */
+    font-size: 1.5rem; /* Adjust font size */
+    color: white; /* White text for title */
+}
+
+/* Modal body */
+
+
+/* Modal footer */
+.modal-footer {
+    background-color: #ffb6c1; /* Light pink for footer */
+    border-top: none; /* Remove default border */
+    border-radius: 0 0 30px 30px; /* Rounded bottom corners */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+}
+
+    /* Buttons in the footer */
+    .modal-footer .btn {
+        margin-left: 10px;
+    }
+
+    .modal-footer .btn-primary {
+        background-color: 0a58ca; /* Hot pink button */
+        border: 30px;
+        font-size: 25px;
+        width: 25%;
+        padding: 15px;
+        color: coral;
+        font-family: 'Khmer M1', sans-serif;
+    }
+
+    .modal-footer .btn-secondary {
+        background-color: Red; /* Plum button */
+        border: none;
+        font-size: 25px;
+        width: 25%;
+        padding: 15px;
+        color: coral;
+        font-family: 'Khmer M1', sans-serif;
+    }
+
+.modal-dialog {
+    max-width: 40%; 
+    /* margin: 1.75rem auto;  */
+    /* width: 80%; */
+    padding: 15px;
+    position: relative;
+    
+    
+    top: -10px;
+}
+
+.custom-font006 {
+    font-family: 'Khmer M1', sans-serif;
+    font-size: 25px;
+    color: black;
+    text-align: center; /* Ensure text is centered horizontally */
+    text-shadow: 2px 2px 0px #FFFFFF, /* Light shadow for 3D effect */
+    4px 4px 0px #d0d0d0, /* Darker shadow for deeper effect */
+
+
+    0 0 1000px white, /* Glowing effect */
+    0 0 500px white, 0 0 30px lightblue, 0 0 40px lightblue;
+    /*margin-left: 30px;*/
+}
+
+
+.custom-font007 {
+    font-family: 'Khmer M1', sans-serif;
+    font-size: 45px;
+    color: blue;
+    text-align: center; /* Ensure text is centered horizontally */
+    text-shadow: 2px 2px 0px #FFFFFF, /* Light shadow for 3D effect */
+    4px 4px 0px #d0d0d0, /* Darker shadow for deeper effect */
+    6px 6px 0px #a0a0a0, /* Darker shadow for deeper effect */
+    8px 8px 0px #707070, /* Darker shadow for deeper effect */
+    10px 10px 0px #404040, /* Darker shadow for deeper effect */
+    12px 12px 0px #000000, /* Darker shadow for deepest effect */
+    0 0 1000px white, /* Glowing effect */
+    0 0 500px white, 0 0 30px lightblue, 0 0 40px lightblue;
+}
+
+.custom-font007A {
+    font-family: 'Khmer M1', sans-serif;
+    font-size: 30px;
+    color: blue;
+    text-align: center; /* Ensure text is centered horizontally */
+    text-shadow: 2px 2px 0px #FFFFFF, /* Light shadow for 3D effect */
+    4px 4px 0px #d0d0d0, /* Darker shadow for deeper effect */
+    6px 6px 0px #a0a0a0, /* Darker shadow for deeper effect */
+    8px 8px 0px #707070, /* Darker shadow for deeper effect */
+    10px 10px 0px #404040, /* Darker shadow for deeper effect */
+    12px 12px 0px #000000, /* Darker shadow for deepest effect */
+    0 0 1000px white, /* Glowing effect */
+    0 0 500px white, 0 0 30px lightblue, 0 0 40px lightblue;
+}
+
+.custom-font5 {
+    font-family: 'Kh Metal Chrieng', sans-serif;
+    font-size: 30px;
+    color: mediumvioletred;
+}
+
+.custom-font009 {
+    font-family: 'Khmer M1', sans-serif;
+    font-size: 14px;
+    color: red;
+ 
+}
+
+.custom-font010 {
+    font-family: 'Kh Metal Chrieng', sans-serif;
+    font-size: 12px;
+    color: black;
+}
+/*.text-center {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}*/
+
+
+.clickable3 {
+    cursor: pointer; /* Changes the cursor to signify clickable elements */
+    padding: 5px; /* Adds space inside the element, making it easier to interact with */
+    border-radius: 5px; /* Rounds the corners for a softer, more modern look */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+    user-select: none; /* Prevents text selection, useful if the clickable does not contain selectable text */
+}
+
+    .clickable3:hover {
+        background-color:greenyellow; /* Bright green background on hover to clearly indicate interactiveness */
+        color: black;
+    }
+
+.custom-font {
+    font-family: 'Khmer OS Battambang', Arial, sans-serif; 
+    font-size: 20px; 
+    text-align: justify; 
+    line-height: 2; 
+    font-weight: bold;
+}
+
+.swal-title-custom-error {
+    font-family: 'Khmer OS Battambang', Arial, sans-serif;
+/*    font-size: 20px;
+    text-align: justify;
+    line-height: 2;*/
+    color: #d33; /* Red */
+}
+
+
+.swal-title-custom-error1 {
+    font-family: 'Khmer OS Battambang', Arial, sans-serif;
+        font-size: 20px;
+    text-align: justify;
+    line-height: 2;
+    color: #d33; /* Red */
+}
+.swal-title-custom-warning {
+    font-family: 'Khmer OS Battambang', Arial, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 2;
+    color: #f39c12; /* Orange */
+}
+
+.swal-title-custom-success {
+    font-family: 'Khmer OS Battambang', Arial, sans-serif;
+/*    font-size: 20px;
+    text-align: justify;
+    line-height: 2;*/
+    color: #3085d6; /* Blue */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    color: #00ff90;
+    background-color: oldlace; /* Floral white for table background */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;
+}
+
+    .table th, .table td {
+        border: 1px solid #00ff21;
+        padding: 20px;
+        text-align: left;
+        color: black;
+        font-family: 'Khmer OS Battambang', Arial, sans-serif;
+    }
+
+    .table th {
+        background-color: #b19a9e; /* Light pink for table headers */
+        color: red;
+        font-family: 'khmer M1', Arial, sans-serif;
+        font-size: 20px;
+        text-align: justify;
+       
+        text-shadow: 2px 2px 0px #FFFFFF, 
+    4px 4px 0px #d0d0d0, 
+    6px 6px 0px #a0a0a0, 
+    8px 8px 0px #707070, 
+    10px 10px 0px #404040, /* Darker shadow for deeper effect */
+    12px 12px 0px #000000, /* Darker shadow for deepest effect */
+    0 0 1000px white, /* Glowing effect */
+    0 0 500px white, 0 0 30px lightblue, 0 0 40px lightblue;
+    }
+
+
+    .text-centerModal {
+        display: flex;
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+        height: 100%; /* Ensure this height covers the desired area */
+        width: 100%; /* Optional: adjust based on the container */
+      
+    }
+    /* Footer styles */
+    footer {
+        background-color: #181014; /* Hot pink background to match modal header */
+        color: white;
+        padding: 15px 20px;
+        border-radius: 0 0 30px 30px; /* Rounded bottom corners */
+        margin-top: 20px;
+        text-align: center;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+    }
+
+    /* footer p {
+        margin: 0;
+        font-family: 'Khmer OS Battambang', Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+    } */
+
+    /* Custom font class */
+    /* .custom-font007A {
+        font-family: 'Khmer OS Battambang', Arial, sans-serif;
+    } */

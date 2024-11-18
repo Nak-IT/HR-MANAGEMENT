@@ -1,0 +1,179 @@
+/* Table styling */
+#usersTable {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#usersTable th, #usersTable td {
+    padding: 10px;
+    text-align: left;
+}
+
+#usersTable th {
+    background-color: #4CAF50;
+    color: rgb(161, 67, 67);
+}
+
+#usersTable td {
+    background-color: #f9f9f9;
+}
+
+/* Button styling */
+.btn-sm {
+    margin: 0 5px;
+    padding: 5px 10px;
+}
+
+/* .modal-header {
+    background-color: #a71313;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-title {
+    font-size: 18px;
+} */
+
+/* Adjust modal for smaller screens */
+@media (max-width: 768px) {
+    .modal-dialog {
+        width: 100%;
+        margin: 0;
+        
+    }
+}
+/* Center the modal content */
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100% - 1rem);
+}
+
+.modal-content {
+    margin: auto;
+    top: 0;
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+}
+
+/* Ensure the modal appears at the top */
+.modal.fade .modal-dialog {
+    transform: translate(0, -50px);
+}
+
+.modal.show .modal-dialog {
+    transform: none;
+}
+
+/* Additional styling for better visibility */
+.modal-header {
+    background-color: #a71313;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-title {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Khmer M1', sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.custom-font006 {
+    font-family: 'Khmer M1', sans-serif;
+    font-size: 25px;
+    color: black;
+    text-align: center; /* Ensure text is centered horizontally */
+    text-shadow: 2px 2px 0px #FFFFFF, /* Light shadow for 3D effect */
+    4px 4px 0px #d0d0d0, /* Darker shadow for deeper effect */
+
+
+    0 0 1000px white, /* Glowing effect */
+    0 0 500px white, 0 0 30px lightblue, 0 0 40px lightblue;
+    /*margin-left: 30px;*/
+}
+
+
+.custom-font007 {
+    font-family: 'Khmer M1', sans-serif;
+    font-size: 45px;
+    color: blue;
+    text-align: center; /* Ensure text is centered horizontally */
+    text-shadow: 2px 2px 0px #FFFFFF, /* Light shadow for 3D effect */
+    4px 4px 0px #d0d0d0, /* Darker shadow for deeper effect */
+    6px 6px 0px #a0a0a0, /* Darker shadow for deeper effect */
+    8px 8px 0px #707070, /* Darker shadow for deeper effect */
+    10px 10px 0px #404040, /* Darker shadow for deeper effect */
+    12px 12px 0px #000000, /* Darker shadow for deepest effect */
+    0 0 1000px white, /* Glowing effect */
+    0 0 500px white, 0 0 30px lightblue, 0 0 40px lightblue;
+}
+
+.custom-font007A {
+    font-family: 'Khmer M1', sans-serif;
+    font-size: 30px;
+    color: blue;
+    text-align: center; /* Ensure text is centered horizontally */
+    text-shadow: 2px 2px 0px #FFFFFF, /* Light shadow for 3D effect */
+    4px 4px 0px #d0d0d0, /* Darker shadow for deeper effect */
+    6px 6px 0px #a0a0a0, /* Darker shadow for deeper effect */
+    8px 8px 0px #707070, /* Darker shadow for deeper effect */
+    10px 10px 0px #404040, /* Darker shadow for deeper effect */
+    12px 12px 0px #000000, /* Darker shadow for deepest effect */
+    0 0 1000px white, /* Glowing effect */
+    0 0 500px white, 0 0 30px lightblue, 0 0 40px lightblue;
+}
+
+.custom-font007BB {
+    font-family: 'Khmer M1', sans-serif;
+    font-size: 30px;
+    color: rgb(22, 39, 23);
+    text-align: center; /* Ensure text is centered horizontally */
+    text-shadow: 2px 2px 0px #FFFFFF, /* Light shadow for 3D effect */
+    4px 4px 0px #d0d0d0, /* Darker shadow for deeper effect */
+    6px 6px 0px #a0a0a0, /* Darker shadow for deeper effect */
+    8px 8px 0px #707070, /* Darker shadow for deeper effect */
+    10px 10px 0px #404040, /* Darker shadow for deeper effect */
+    12px 12px 0px #000000, /* Darker shadow for deepest effect */
+    0 0 1000px white, /* Glowing effect */
+    0 0 500px white, 0 0 30px lightblue, 0 0 40px lightblue;
+}
+
+.custom-font5 {
+    font-family: 'Kh Metal Chrieng', sans-serif;
+    font-size: 30px;
+    color: mediumvioletred;
+}
+
+.custom-font009 {
+    font-family: 'Khmer M1', sans-serif;
+    font-size: 14px;
+    color: red;
+ 
+}
+
+.custom-font010 {
+    font-family: 'Kh Metal Chrieng', sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.custom-font011 {
+    font-family: 'Kh Metal Chrieng', sans-serif;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+
+.custom-font00B {
+    font-family: 'Khmer os battambang', sans-serif;
+    font-size: 18px;
+    color: blue;
+    text-align: center;
+}

@@ -1,0 +1,114 @@
+﻿/* General A4 Page Setup */
+@page {
+    size: A4;
+    margin: 3mm;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.5;
+    background: none;
+    -webkit-print-color-adjust: exact; /* Ensures colors are printed as specified */
+    print-color-adjust: exact; /* Standard property for compatibility */
+}
+
+/* Hide Elements Not Needed for Print */
+.modal-header, .modal-footer {
+    display: none;
+}
+
+/* Modal Content Styling */
+.details-info {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+}
+
+    /* Two Column Layout */
+    .details-info .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .details-info .col-md-6 {
+        width: 48%; /* Adjust to fit two columns */
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    /* Header Styles */
+    .details-info h5 {
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        text-align: center;
+        color: #ff69b4;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* Section Titles */
+    .details-info p strong {
+        font-size: 12px;
+        color: #ff6f91;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+/* Employee Photo */
+#detailPhotoUrl {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #ff6f91;
+}
+
+/* Page Footer */
+@page {
+    @bottom-right {
+        content: "Page " counter(page);
+        font-size: 12px;
+        color: #777;
+    }
+}
+
+/* Custom Fonts */
+.custom-font007 {
+    font-family: 'Khmer M1', sans-serif;
+    font-size: 45px;
+    color: blue;
+    text-align: center;
+    text-shadow: 2px 2px 0px #FFFFFF, /* Light shadow for 3D effect */
+    4px 4px 0px #d0d0d0, /* Darker shadow for deeper effect */
+    6px 6px 0px #a0a0a0, /* Darker shadow for deeper effect */
+    8px 8px 0px #707070, /* Darker shadow for deeper effect */
+    10px 10px 0px #404040, /* Darker shadow for deepest effect */
+    12px 12px 0px #000000, /* Darker shadow for deepest effect */
+    0 0 1000px white, /* Glowing effect */
+    0 0 500px white, 0 0 30px lightblue, 0 0 40px lightblue;
+}
+
+.custom-font009 {
+    font-family: 'Khmer M1', sans-serif;
+    font-size: 16px;
+    color: red;
+}
+
+.custom-font010 {
+    font-family: 'Kh Metal Chrieng', sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+@media print {
+    body {
+        background-color: red;
+    }
+}

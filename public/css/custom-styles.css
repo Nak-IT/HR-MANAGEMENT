@@ -1,0 +1,111 @@
+/* General body styling for a cute theme */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun and playful font */
+    background-color: #f9f9f9; /* Light, pastel background */
+    color: #333; /* Soft gray for text */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Center the container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px; /* Soft rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Cute Heading */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ff6b81; /* Cute pink color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Soft text shadow */
+    margin-bottom: 20px;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f0f4f8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #ff6b81; /* Pink for the header */
+    color: white;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fdfdfd;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+th, td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1em;
+}
+
+/* Add some cute buttons */
+button {
+    background-color: #ff6b81;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4757; /* Darker pink on hover */
+}
+
+form {
+    display: inline-block;
+}
+
+/* Add a little animation to the table rows */
+tr {
+    transition: background-color 0.2s ease;
+}
+
+tr:hover {
+    background-color: #ffecf0; /* Light pink when hovering over rows */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    th, td {
+        display: block;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    th::before, td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: calc(50% - 10px);
+        padding-left: 10px;
+        text-align: left;
+        font-weight: bold;
+    }
+}

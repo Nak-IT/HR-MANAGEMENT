@@ -1,0 +1,301 @@
+/* public/css/custom-profile.css */
+
+/* Importing Khmer Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700&family=Hanuman:wght@300;400;700&display=swap');
+
+/* Base Styles */
+body {
+    font-family: 'Battambang', 'Hanuman', sans-serif;
+    background-color: #F0F8FF; /* AliceBlue */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    min-height: 100vh;
+}
+/* Style for the image previews */
+.form-group img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: rgb(201, 201, 243);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    left: 0;
+}
+
+/* Header and Navigation Styles */
+header {
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+   
+}
+
+
+/* Profile Container */
+.profile-container {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    width: 100%;
+    margin: 1rem auto;
+    border: 1px solid #E5E7EB;
+}
+
+/* Header Section */
+.profile-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile-header svg {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 1.25rem;
+}
+
+.profile-header h2 {
+    font-size: 2.25rem;
+    color: #4169E1; /* RoyalBlue */
+    margin: 0.75rem 0;
+}
+
+.profile-header p {
+    font-size: 1.1rem;
+    color: #4A4A4A;
+    margin: 0;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.nav-links a {
+    color: #4169E1; /* RoyalBlue */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #4169E1; /* RoyalBlue */
+    color: #FFFFFF;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.75rem;
+    color: #4169E1; /* RoyalBlue */
+    font-weight: bold;
+}
+
+.form-group-input {
+    width: 90%;
+    padding: 0.875rem 1.25rem;
+    border: 2px solid #87CEFA; /* LightSkyBlue */
+    border-radius: 25px;
+    font-size: 1.1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group-input:focus {
+    border-color: #4169E1; /* RoyalBlue */
+    outline: none;
+    box-shadow: 0 0 8px rgba(65, 105, 225, 0.5);
+}
+
+/* Buttons */
+.btn-submit {
+    width: 100%;
+    padding: 0.875rem;
+    background-color: #4169E1; /* RoyalBlue */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #1E90FF; /* DodgerBlue */
+}
+
+.btn-danger {
+    padding: 0.875rem 1.75rem;
+    background-color: #DC143C; /* Crimson */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #B22222; /* FireBrick */
+}
+
+.btn-secondary {
+    padding: 0.875rem 1.75rem;
+    background-color: #778899; /* LightSlateGray */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #708090; /* SlateGray */
+}
+
+/* Remember Me Checkbox */
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.remember-me input {
+    margin-right: 0.75rem;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #87CEFA; /* LightSkyBlue */
+    border-radius: 6px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.remember-me input:checked {
+    background-color: #4169E1; /* RoyalBlue */
+    border-color: #4169E1;
+}
+
+/* Forgot Password and Register Links */
+.forgot-password,
+.register-link {
+    text-align: center;
+    margin-top: 1.75rem;
+}
+
+.forgot-password a,
+.register-link a {
+    color: #4169E1; /* RoyalBlue */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.forgot-password a:hover,
+.register-link a:hover {
+    color: #1E90FF; /* DodgerBlue */
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #FFFFFF;
+    padding: 2.5rem;
+    border-radius: 15px;
+    max-width: 450px;
+    width: 95%;
+    position: relative;
+}
+
+.modal-content h2 {
+    font-size: 1.75rem;
+    color: #4169E1; /* RoyalBlue */
+    margin-bottom: 1.25rem;
+}
+
+.modal-content p {
+    font-size: 1.1rem;
+    color: #4A4A4A;
+    margin-bottom: 1.75rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Error Message Styling */
+.error-message {
+    color: #DC143C; /* Crimson */
+    font-size: 0.95rem;
+    margin-top: 0.75rem;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .profile-container {
+        padding: 1.75rem;
+    }
+
+    .profile-header h2 {
+        font-size: 1.75rem;
+    }
+
+    .profile-header p {
+        font-size: 1rem;
+    }
+
+    .btn-submit,
+    .btn-danger,
+    .btn-secondary {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        margin: 0.5rem 0;
+    }
+}
